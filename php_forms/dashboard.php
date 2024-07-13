@@ -14,7 +14,7 @@ if (!isset($_SESSION['email'])) {
 </head>
 <body>
     <div class="container">
-        <h2>Welcome, <?php echo $_SESSION['email']; ?></h2>
+        <h2>Welcome Dear, <?php echo $_SESSION['email']; ?></h2>
         <a href="update.html">Update</a>
         <a href="logout.html">Logout</a>
     </div>
