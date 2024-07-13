@@ -10,7 +10,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if the logged-in user is the first registered user
+
 $currentEmail = $_SESSION['email'];
 $sql = "SELECT * FROM users ORDER BY id ASC LIMIT 1";
 $result = $conn->query($sql);
@@ -21,7 +21,7 @@ if ($firstUser['email'] != $currentEmail) {
     exit();
 }
 
-// Fetch all registered users
+
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
 ?>
